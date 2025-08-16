@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr) ;
+    grid-template-rows: repeat(6,1fr);
+    /* border: 2px solid black; */
+    height: 500px;
+}
+.row1{
+    /* border: 2px solid red; */
+    height: 60px;
+    grid-column: 1/13;
+    background-color: black;
+    /* grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: beige; */
+}
+.row2{
+    /* border: 2px solid red; */
+    height: 60px;
+    grid-column: 1/13;
+    background-color: rgb(149, 17, 17);
+    /* border: 2px solid rgb(0, 255, 166); */
+}
+.row3{
+    grid-row: 3/4;
+    height: 300px;
+    grid-column: 1/13;
+    background-color: rgb(59, 206, 26);
+    /* border: 2px solid rgb(21, 0, 255); */
+}
+#img{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    /* object-fit: cover;
+    object-position: center; */
+
+}
+.row4{
+    grid-row: 4/5;
+    grid-column: 1/13;
+    background-color: rgb(140, 201, 126);
+    /* border: 2px solid rgb(21, 0, 255); */
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: auto auto; */
+    /* margin-top: 220px; */
+    flex-wrap: wrap;
+}
+.box{
+    /* border: 2px solid rgb(153, 82, 51); */
+    height: 300px;
+    width: 300px;
+    margin-right: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+#box1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+.box11{
+     /* border: 2px solid red;  */
+     padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+ 
+
+#img1{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
